@@ -3,509 +3,509 @@
     "issues": [
       {
         "code": "UNKNOWN_BIDS_VERSION",
-        "severity": "ignore",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.dataset.UnknownVersion"
+        "rule": "rules.checks.dataset.UnknownVersion",
+        "severity": "ignore"
       },
       {
         "code": "README_FILE_MISSING",
-        "severity": "ignore",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.hints.ReadmeFileMissing"
+        "rule": "rules.checks.hints.ReadmeFileMissing",
+        "severity": "ignore"
       },
       {
         "code": "TOO_FEW_AUTHORS",
-        "severity": "ignore",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.hints.TooFewAuthors"
+        "rule": "rules.checks.hints.TooFewAuthors",
+        "severity": "ignore"
       },
       {
         "code": "JSON_KEY_REQUIRED",
         "subCode": "Name",
-        "severity": "error",
         "location": "/dataset_description.json",
-        "issueMessage": "Field description: Name of the dataset.\n",
-        "rule": "rules.dataset_metadata.dataset_description"
+        "severity": "error",
+        "rule": "rules.dataset_metadata.dataset_description",
+        "issueMessage": "Field description: Name of the dataset.\n"
       },
       {
         "code": "JSON_KEY_RECOMMENDED",
         "subCode": "License",
-        "severity": "warning",
         "location": "/dataset_description.json",
-        "issueMessage": "Field description: The license for the dataset.\nThe use of license name abbreviations is RECOMMENDED for specifying a license\n(see [Licenses](SPEC_ROOT/appendices/licenses.md)).\nThe corresponding full license text MAY be specified in an additional\n`LICENSE` file.\n",
-        "rule": "rules.dataset_metadata.dataset_description"
+        "severity": "warning",
+        "rule": "rules.dataset_metadata.dataset_description",
+        "issueMessage": "Field description: The license for the dataset.\nThe use of license name abbreviations is RECOMMENDED for specifying a license\n(see [Licenses](SPEC_ROOT/appendices/licenses.md)).\nThe corresponding full license text MAY be specified in an additional\n`LICENSE` file.\n"
       },
       {
         "code": "JSON_KEY_RECOMMENDED",
         "subCode": "GeneratedBy",
-        "severity": "warning",
         "location": "/dataset_description.json",
-        "issueMessage": "Field description: Used to specify provenance of the dataset.\n",
-        "rule": "rules.dataset_metadata.dataset_description"
+        "severity": "warning",
+        "rule": "rules.dataset_metadata.dataset_description",
+        "issueMessage": "Field description: Used to specify provenance of the dataset.\n"
       },
       {
         "code": "JSON_KEY_RECOMMENDED",
         "subCode": "SourceDatasets",
-        "severity": "warning",
         "location": "/dataset_description.json",
-        "issueMessage": "Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).\nValid keys in each object include `\"URL\"`, `\"DOI\"` (see\n[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and\n`\"Version\"` with\n[string](https://www.w3schools.com/js/js_json_datatypes.asp)\nvalues.\n",
-        "rule": "rules.dataset_metadata.dataset_description"
+        "severity": "warning",
+        "rule": "rules.dataset_metadata.dataset_description",
+        "issueMessage": "Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).\nValid keys in each object include `\"URL\"`, `\"DOI\"` (see\n[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and\n`\"Version\"` with\n[string](https://www.w3schools.com/js/js_json_datatypes.asp)\nvalues.\n"
       },
       {
         "code": "NO_AUTHORS",
         "subCode": "Authors",
-        "severity": "warning",
         "location": "/dataset_description.json",
-        "issueMessage": "Field description: List of individuals who contributed to the creation/curation of the dataset.\n",
-        "rule": "rules.dataset_metadata.dataset_authors"
+        "severity": "warning",
+        "rule": "rules.dataset_metadata.dataset_authors",
+        "issueMessage": "Field description: List of individuals who contributed to the creation/curation of the dataset.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "sampling_frequency",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B1/ecephys/sub-EC2_ses-EC2+B1_channels.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "gain",
-        "severity": "warning",
-        "location": "/sub-EC2/ses-EC2+B1/ecephys/sub-EC2_ses-EC2+B1_channels.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "subCode": "gain",
+        "location": "/sub-EC2/ses-EC2+B1/ecephys/sub-EC2_ses-EC2+B1_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B1/ecephys/sub-EC2_ses-EC2+B1_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B1/ecephys/sub-EC2_ses-EC2+B1_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B1/ecephys/sub-EC2_ses-EC2+B1_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B1/ecephys/sub-EC2_ses-EC2+B1_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B1/ecephys/sub-EC2_ses-EC2+B1_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-EC2/ses-EC2+B1/ecephys/sub-EC2_ses-EC2+B1_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-EC2/ses-EC2+B1/ecephys/sub-EC2_ses-EC2+B1_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B9/ecephys/sub-EC2_ses-EC2+B9_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B9/ecephys/sub-EC2_ses-EC2+B9_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "sampling_frequency",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B9/ecephys/sub-EC2_ses-EC2+B9_channels.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "gain",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B9/ecephys/sub-EC2_ses-EC2+B9_channels.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B9/ecephys/sub-EC2_ses-EC2+B9_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B9/ecephys/sub-EC2_ses-EC2+B9_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-EC2/ses-EC2+B9/ecephys/sub-EC2_ses-EC2+B9_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-EC2/ses-EC2+B9/ecephys/sub-EC2_ses-EC2+B9_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B9/ecephys/sub-EC2_ses-EC2+B9_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B15/ecephys/sub-EC2_ses-EC2+B15_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B15/ecephys/sub-EC2_ses-EC2+B15_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B15/ecephys/sub-EC2_ses-EC2+B15_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-EC2/ses-EC2+B15/ecephys/sub-EC2_ses-EC2+B15_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-EC2/ses-EC2+B15/ecephys/sub-EC2_ses-EC2+B15_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B15/ecephys/sub-EC2_ses-EC2+B15_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B15/ecephys/sub-EC2_ses-EC2+B15_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "sampling_frequency",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B15/ecephys/sub-EC2_ses-EC2+B15_channels.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "gain",
-        "severity": "warning",
-        "location": "/sub-EC2/ses-EC2+B15/ecephys/sub-EC2_ses-EC2+B15_channels.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "subCode": "gain",
+        "location": "/sub-EC2/ses-EC2+B15/ecephys/sub-EC2_ses-EC2+B15_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B89/ecephys/sub-EC2_ses-EC2+B89_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B89/ecephys/sub-EC2_ses-EC2+B89_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B89/ecephys/sub-EC2_ses-EC2+B89_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B89/ecephys/sub-EC2_ses-EC2+B89_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "impedance",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B89/ecephys/sub-EC2_ses-EC2+B89_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "sampling_frequency",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B89/ecephys/sub-EC2_ses-EC2+B89_channels.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "gain",
-        "severity": "warning",
-        "location": "/sub-EC2/ses-EC2+B89/ecephys/sub-EC2_ses-EC2+B89_channels.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "subCode": "gain",
+        "location": "/sub-EC2/ses-EC2+B89/ecephys/sub-EC2_ses-EC2+B89_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B89/ecephys/sub-EC2_ses-EC2+B89_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B105/ecephys/sub-EC2_ses-EC2+B105_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B105/ecephys/sub-EC2_ses-EC2+B105_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B105/ecephys/sub-EC2_ses-EC2+B105_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "sampling_frequency",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B105/ecephys/sub-EC2_ses-EC2+B105_channels.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "gain",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B105/ecephys/sub-EC2_ses-EC2+B105_channels.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B105/ecephys/sub-EC2_ses-EC2+B105_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B105/ecephys/sub-EC2_ses-EC2+B105_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "impedance",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B105/ecephys/sub-EC2_ses-EC2+B105_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B76/ecephys/sub-EC2_ses-EC2+B76_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B76/ecephys/sub-EC2_ses-EC2+B76_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-EC2/ses-EC2+B76/ecephys/sub-EC2_ses-EC2+B76_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-EC2/ses-EC2+B76/ecephys/sub-EC2_ses-EC2+B76_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B76/ecephys/sub-EC2_ses-EC2+B76_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B76/ecephys/sub-EC2_ses-EC2+B76_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B76/ecephys/sub-EC2_ses-EC2+B76_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "sampling_frequency",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B76/ecephys/sub-EC2_ses-EC2+B76_channels.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "gain",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B76/ecephys/sub-EC2_ses-EC2+B76_channels.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B8/ecephys/sub-EC2_ses-EC2+B8_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B8/ecephys/sub-EC2_ses-EC2+B8_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-EC2/ses-EC2+B8/ecephys/sub-EC2_ses-EC2+B8_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-EC2/ses-EC2+B8/ecephys/sub-EC2_ses-EC2+B8_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B8/ecephys/sub-EC2_ses-EC2+B8_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B8/ecephys/sub-EC2_ses-EC2+B8_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B8/ecephys/sub-EC2_ses-EC2+B8_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "sampling_frequency",
-        "severity": "warning",
         "location": "/sub-EC2/ses-EC2+B8/ecephys/sub-EC2_ses-EC2+B8_channels.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "gain",
-        "severity": "warning",
-        "location": "/sub-EC2/ses-EC2+B8/ecephys/sub-EC2_ses-EC2+B8_channels.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "subCode": "gain",
+        "location": "/sub-EC2/ses-EC2+B8/ecephys/sub-EC2_ses-EC2+B8_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
       }
     ],
     "codeMessages": {
